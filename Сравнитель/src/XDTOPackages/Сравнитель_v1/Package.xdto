@@ -1,0 +1,92 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://comparator.iryaboff.ru/v1/">
+	<import namespace="http://v8.1c.ru/8.1/data/core"/>
+	<valueType name="БазовыйТипОписанияТипа" base="xs:string">
+		<enumeration xsi:type="xs:string">Число</enumeration>
+		<enumeration xsi:type="xs:string">Строка</enumeration>
+		<enumeration xsi:type="xs:string">Дата</enumeration>
+		<enumeration xsi:type="xs:string">Булево</enumeration>
+		<enumeration xsi:type="xs:string">ХранилищеЗначения</enumeration>
+		<enumeration xsi:type="xs:string">УникальныйИдентификатор</enumeration>
+	</valueType>
+	<valueType name="СпособСоединенияВыгруженныхТаблиц" base="xs:string">
+		<enumeration xsi:type="xs:string">Левое</enumeration>
+		<enumeration xsi:type="xs:string">Правое</enumeration>
+		<enumeration xsi:type="xs:string">Внутреннее</enumeration>
+		<enumeration xsi:type="xs:string">Полное</enumeration>
+	</valueType>
+	<valueType name="НепустаяСтрока" base="xs:string" minLength="1"/>
+	<valueType name="ВидПоляТаблицыДанных" base="xs:string">
+		<enumeration xsi:type="xs:string">Измерение</enumeration>
+		<enumeration xsi:type="xs:string">Ресурс</enumeration>
+		<enumeration xsi:type="xs:string">Реквизит</enumeration>
+	</valueType>
+	<valueType name="МеханизмВыгрузкиДанных" base="xs:string">
+		<enumeration xsi:type="xs:string">Запрос</enumeration>
+		<enumeration xsi:type="xs:string">ПроизвольныйАлгоритм</enumeration>
+	</valueType>
+	<valueType name="НомерБазы" base="xs:int">
+		<enumeration xsi:type="xs:string">1</enumeration>
+		<enumeration xsi:type="xs:string">2</enumeration>
+	</valueType>
+	<objectType name="ПравилоСравненияДанных">
+		<property name="ПриОпределенииБазы" type="xs:string"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ПараметрыСравнения" type="d3p1:ПравилоСравненияДанных.ПараметрСравненияДанных" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ТаблицыДанных" type="d3p1:ТаблицаДанных" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПравилоСравненияДанных.ПараметрСравненияДанных">
+		<property name="Имя" type="xs:NMTOKEN"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="Тип" type="d3p1:ОписаниеТипа"/>
+	</objectType>
+	<objectType name="ОписаниеТипа">
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="БазовыйТип" type="d3p1:БазовыйТипОписанияТипа"/>
+		<property name="ДлинаЧисла" type="xs:nonNegativeInteger"/>
+		<property name="ТочностьЧисла" type="xs:nonNegativeInteger"/>
+		<property name="НеотрицательноеЧисло" type="xs:boolean"/>
+		<property name="ДлинаСтроки" type="xs:nonNegativeInteger"/>
+		<property name="СтрокаНеограниченнойДлины" type="xs:boolean"/>
+		<property name="ДатаСВременем" type="xs:boolean"/>
+	</objectType>
+	<objectType name="ТаблицаДанных">
+		<property name="Имя" type="xs:NMTOKEN"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="Синоним" type="d3p1:НепустаяСтрока"/>
+		<property name="ПриСравненииСтрок" type="xs:string"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="СпособСоединения" type="d3p1:СпособСоединенияВыгруженныхТаблиц"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="Поля" type="d3p1:ТаблицаДанных.Поле" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ПравилоВыгрузки1" type="d3p1:ТаблицаДанных.ПравилоВыгрузки"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ПравилоВыгрузки2" type="d3p1:ТаблицаДанных.ПравилоВыгрузки"/>
+	</objectType>
+	<objectType name="ТаблицаДанных.Поле">
+		<property name="Имя" type="xs:NMTOKEN"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="Синоним" type="d3p1:НепустаяСтрока"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ВидПоля" type="d3p1:ВидПоляТаблицыДанных"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ТипИсходногоЗначения" type="d3p1:ОписаниеТипа"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ТипЗначенияСравнения" type="d3p1:ОписаниеТипа"/>
+		<property name="Обязательное" type="xs:boolean"/>
+		<property name="ПриПолученииЗначенияСравнения" type="xs:string"/>
+		<property name="ПриПолученииПредставления" type="xs:string"/>
+		<property name="ПриСравненииЗначений" type="xs:string"/>
+	</objectType>
+	<objectType name="ТаблицаДанных.ПравилоВыгрузки">
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="МеханизмВыгрузки" type="d3p1:МеханизмВыгрузкиДанных"/>
+		<property name="ТекстЗапроса" type="xs:string"/>
+		<property name="ПередВыполнениемЗапроса" type="xs:string"/>
+		<property name="ПриВыборкеИзРезультатаЗапроса" type="xs:string"/>
+		<property name="ПослеВыполненияЗапроса" type="xs:string"/>
+		<property name="ПриВыгрузкеПроизвольнымАлгоритмом" type="xs:string"/>
+	</objectType>
+	<objectType name="ВыгрузкаДанных">
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="ИдентификаторВыгрузки" type="d3p1:UUID"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ПравилоСравнения" type="d3p1:ПравилоСравненияДанных"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="НомерБазы" type="d3p1:НомерБазы"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="Таблицы" type="d3p1:ВыгрузкаДанных.Таблица" lowerBound="0" upperBound="-1"/>
+		<property xmlns:d3p1="http://comparator.iryaboff.ru/v1/" name="ЗначенияПараметров" type="d3p1:ВыгрузкаДанных.ЗначениеПараметра" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВыгрузкаДанных.Таблица">
+		<property name="Имя" type="xs:NMTOKEN"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Данные" type="d3p1:ValueStorage"/>
+	</objectType>
+	<objectType name="ВыгрузкаДанных.ЗначениеПараметра">
+		<property name="Имя" type="xs:NMTOKEN"/>
+		<property xmlns:d3p1="http://v8.1c.ru/8.1/data/core" name="Значение" type="d3p1:ValueStorage"/>
+	</objectType>
+</package>

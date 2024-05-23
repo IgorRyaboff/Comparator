@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e02a66b7-a0aa-4848-8358-5bcb74b86649">
+  <producedTypes>
+    <refType typeId="286ca6bc-62c6-4801-9aa6-80ee16a5179d" valueTypeId="b19ecdcb-9390-43ce-8422-f9e2e6f895fb"/>
+    <listType typeId="bce917d8-f9c3-4b6c-a791-7bdff8530312" valueTypeId="3a9d5d0e-05d7-449d-8f5e-1afe094d2028"/>
+    <managerType typeId="b4f09df3-b49d-4e7e-b78a-9fb23c788920" valueTypeId="4abfea2b-50ea-4e7d-8228-e772327e874d"/>
+  </producedTypes>
+  <name>НомераБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номера баз</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="35f85415-5ad6-4ec9-bdb9-5997e0778dd0">
+    <name>Первая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="383281df-57e4-4128-83db-5c8ba9c192ab">
+    <name>Вторая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вторая</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

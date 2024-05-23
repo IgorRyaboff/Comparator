@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51236612-6969-4b4a-a2ad-6489407087ca">
+  <name>ОбщегоНазначенияСравнительКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общего назначения сравнитель клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

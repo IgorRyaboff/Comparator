@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eb43703-bcef-41fe-aae0-3039509068fa">
+  <producedTypes>
+    <selectionType typeId="b079d53c-a6ed-4bfb-b37c-8473fd8fc699" valueTypeId="6b63045b-65d9-469d-bee4-db6275b44310"/>
+    <listType typeId="2c0f20b2-f625-4fa6-9f94-0216984e7608" valueTypeId="e4ae02b4-5f19-44f5-b5d1-18a6e2e46b28"/>
+    <managerType typeId="c0f799bf-aad3-4a35-9ae4-a1912e5f90fa" valueTypeId="a9142ab4-fa8d-499b-a02c-b5935a52e340"/>
+    <recordSetType typeId="268898a9-6692-47c0-b9c3-e4632f0ffe1f" valueTypeId="89942172-e2d4-4862-a3ab-451a9cbc269b"/>
+    <recordKeyType typeId="2b88defd-02b9-40ac-9f97-4fb5e6f28e40" valueTypeId="90801a0d-5f50-4c38-a46a-bcc276174ee2"/>
+    <recordType typeId="ec807171-e611-4b55-9b68-a5333a4ccdd5" valueTypeId="f41ead20-48e3-4111-bf75-a511fcca08fe"/>
+    <recordManagerType typeId="4c07273c-dc00-4b1c-88f5-cd11633a2ed1" valueTypeId="2aae0bda-7b13-447b-99f5-b056102f0325"/>
+  </producedTypes>
+  <name>РезультатыСравненийДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты сравнений данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Результат сравнения данных</value>
+  </recordPresentation>
+  <resources uuid="9c8b9f1b-7f6b-4a75-87ba-697a289e85b7">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <comment>Содержит таблицу значений</comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e349e5d4-6b13-4298-9f07-ab6be290fff8">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СравнениеДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f085e5a9-da46-455b-ad4d-87855a07efa4">
+    <name>Таблица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТаблицыДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

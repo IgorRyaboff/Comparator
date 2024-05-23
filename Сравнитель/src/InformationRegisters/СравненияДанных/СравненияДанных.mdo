@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba0af95b-2d55-4a7d-90d5-bf2450b21ae8">
+  <producedTypes>
+    <selectionType typeId="ab762770-9144-43af-a44f-78f7acac134b" valueTypeId="84512c3f-2dac-4d22-8d57-4f9985a0a019"/>
+    <listType typeId="baca5b41-ebdc-4311-85ba-fd0544bd18f1" valueTypeId="b4fcfc3a-4b81-4162-a0da-689ec491fb6f"/>
+    <managerType typeId="fbc0580c-8e36-46fa-aef4-f4b1ce21292e" valueTypeId="22e330ae-2723-44a9-be44-991a3ed8335c"/>
+    <recordSetType typeId="f1a6be56-077c-487b-92b4-6da631c92fb5" valueTypeId="bfdaec94-9840-4052-910f-96b1a238e85e"/>
+    <recordKeyType typeId="249a473b-a40e-4935-a784-124ebf8606e6" valueTypeId="e2f45b38-e4eb-4f4d-b628-d24dfc78fee4"/>
+    <recordType typeId="1d9b163f-4120-4da0-bac6-cf032a5d3906" valueTypeId="34c39e9c-7918-4c09-b743-04e4291ea687"/>
+    <recordManagerType typeId="e9e2d4e9-6324-4bce-b7d5-a20bb046306e" valueTypeId="4d35dc19-be67-4c44-beb4-d83872724f66"/>
+  </producedTypes>
+  <name>СравненияДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнения данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8467ee06-cd3f-4fc2-a000-e93cc6b45d9f">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыДокументаСравнениеДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="058178a0-8023-4e9c-b1a2-1bf9ed8a2d45">
+    <name>ИдентификаторВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор выгрузки</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

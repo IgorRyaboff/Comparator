@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5d0b6200-1ce4-4978-b1c0-1012026e7369">
+  <name>ОбъектыСравнитель</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты сравнитель</value>
+  </synonym>
+  <comment>Функциональная подсистема, содержит все объекты конфигурации Сравнитель</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.ПравилаСравненияДанных</content>
+  <content>Catalog.ТаблицыДанных</content>
+  <content>Enum.БазовыеТипыОписанийТипов</content>
+  <content>Catalog.ОписанияТипов</content>
+  <content>Catalog.ПравилаВыгрузкиТаблиц</content>
+  <content>Enum.МеханизмыВыгрузкиТаблиц</content>
+  <content>Enum.ВидыПолейТаблицДанных</content>
+  <content>CommonPicture.ВидыПолейТаблицДанных</content>
+  <content>CommonModule.ОбновлениеИнформационнойБазыСравнитель</content>
+  <content>CommonModule.ОбщегоНазначенияСравнитель</content>
+  <content>CommonModule.ОбщегоНазначенияСравнительКлиент</content>
+  <content>CommonModule.ОписанияТипов</content>
+  <content>CommonModule.ОписанияТиповВызовСервера</content>
+  <content>CommonModule.ОписанияТиповКлиент</content>
+  <content>CommonModule.ОписанияТиповКлиентСервер</content>
+  <content>DefinedType.ИмяПоляТаблицыДанных</content>
+  <content>XDTOPackage.Сравнитель_v1</content>
+  <content>Enum.НомераБаз</content>
+  <content>Enum.СпособыСоединенияТаблицДанных</content>
+  <content>Document.СравнениеДанных</content>
+  <content>Enum.СтатусыДокументаСравнениеДанных</content>
+  <content>InformationRegister.ВыгрузкиДанных</content>
+  <content>InformationRegister.РезультатыСравненийДанных</content>
+  <content>InformationRegister.СравненияДанных</content>
+  <content>DataProcessor.ЗагрузкаВыгрузокДанных</content>
+  <content>DataProcessor.СравнениеВыгрузокДанных</content>
+</mdclass:Subsystem>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3caa5764-271f-4023-bde9-f8cf7d2fda29">
+  <producedTypes>
+    <refType typeId="beefca2b-8322-45c5-a342-07abb6593a16" valueTypeId="d1144c89-41ff-411d-92aa-a40dc3618ecc"/>
+    <listType typeId="ad9cad93-b8b9-41a0-b7c7-d70fae3827df" valueTypeId="efdf123d-0b20-4681-937c-c0595f003bfc"/>
+    <managerType typeId="86475013-e0fa-4c9c-aaa8-935373029950" valueTypeId="9ac5030d-497f-4546-a5b3-f952aa48998c"/>
+  </producedTypes>
+  <name>ВидыПолейТаблицДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды полей таблиц данных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="579b35de-18ab-4ae4-b87b-dfa199425520">
+    <name>Измерение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Измерение</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d9f117c1-e8ea-4382-9773-800e092566c0">
+    <name>Ресурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d38e40fe-1e3c-4309-ba5c-b34652766b1d">
+    <name>Реквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

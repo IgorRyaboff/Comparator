@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ecc76267-262d-4738-a5ed-6f449d0cbb34">
+  <producedTypes>
+    <objectType typeId="d1c08cdc-3fd6-4169-b687-6f6cd5af74d5" valueTypeId="a9ca08a4-8348-4ce3-b458-f5d8cdd5e65e"/>
+    <managerType typeId="af85706f-db24-4f15-9251-08ed5b445b28" valueTypeId="74d781e4-3808-463a-93ad-e114cedd807a"/>
+  </producedTypes>
+  <name>СравнениеВыгрузокДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнение выгрузок данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>

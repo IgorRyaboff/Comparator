@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e8fbb6d-e73c-4fc2-8516-3cc6c990cfbb">
+  <name>Сравнитель_v1</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнитель v1</value>
+  </synonym>
+  <namespace>http://comparator.iryaboff.ru/v1/</namespace>
+</mdclass:XDTOPackage>

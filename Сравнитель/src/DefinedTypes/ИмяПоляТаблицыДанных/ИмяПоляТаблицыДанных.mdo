@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd6f1c10-8e5d-462a-a6af-067a80772310">
+  <producedTypes>
+    <containerType typeId="71757bf9-ccfe-448c-b653-fc358350d3a9" valueTypeId="0fc148a8-b636-4059-a92e-a30c8a0933a2"/>
+  </producedTypes>
+  <name>ИмяПоляТаблицыДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Имя поля таблицы данных</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>50</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

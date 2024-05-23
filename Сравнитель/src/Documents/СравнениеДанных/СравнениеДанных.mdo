@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="795c1eb8-f329-498a-b6c2-80efdd08419e">
+  <producedTypes>
+    <objectType typeId="341836ce-23f9-417e-9f6e-ec4c639390ac" valueTypeId="bb6da75e-77d3-4446-a57f-b4fd167f3266"/>
+    <refType typeId="1264e098-3787-42a7-8f11-11da60a4888f" valueTypeId="692aac38-25e1-42b5-a18f-4b0c3a6efcf4"/>
+    <selectionType typeId="b471d5b3-79d0-4e10-a7ff-e56cac498066" valueTypeId="32eaf097-334d-4337-9767-9ec4e92e420c"/>
+    <listType typeId="0bc4f232-1827-41b1-9c1b-009c949749af" valueTypeId="e5244a32-2bbb-424c-b2a3-4d913b7c4729"/>
+    <managerType typeId="4e7f17e4-4108-4b7a-99c7-a2ca96097e44" valueTypeId="7509d460-e09c-4c16-a2e9-68944ae5ec9a"/>
+  </producedTypes>
+  <name>СравнениеДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнение данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.СравнениеДанных.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сравнения данных</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.СравнениеДанных.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.СравнениеДанных.Form.ФормаСписка</defaultListForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDeleteOff</registerRecordsDeletion>
+  <registerRecords>InformationRegister.СравненияДанных</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b19c02c2-ca97-48ac-8c59-bb51ea7d3440">
+    <name>ПравилоСравненияДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило сравнения данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПравилаСравненияДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c3e3948-c55e-47dd-b056-5f4902cc7c85">
+    <name>ИдентификаторВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор выгрузки</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор, указываемый в файлах выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="75aaba44-a80c-4068-a993-9318ded2c73d">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыДокументаСравнениеДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="291f60a2-ba0f-45d1-a920-7ac4d6bf96ba">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="37f8ec34-0ff9-4f54-ba6f-26d38e685042">
+    <name>ФормаИмпортаВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма импорта выгрузки</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a53cd45b-bce6-4b7a-a1c3-151e2a9b3f57">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

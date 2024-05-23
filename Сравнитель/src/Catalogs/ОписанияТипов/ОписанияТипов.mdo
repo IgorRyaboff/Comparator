@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d48d66b6-8e18-47b5-aa8a-fc2b41c0db76">
+  <producedTypes>
+    <objectType typeId="655a6a78-01bd-4b78-ae8e-26c970a148ca" valueTypeId="ff78fb22-8ac0-4b36-b378-a98f37311c7c"/>
+    <refType typeId="2dc6f61e-fce6-4e4a-91cd-7baf80bd40e4" valueTypeId="455488e0-7527-4dec-a4a8-18a111af2e59"/>
+    <selectionType typeId="c0934327-fcf5-4fa2-9ab0-4191d2bbd275" valueTypeId="1ef1794c-d991-44f1-864f-4764112b602c"/>
+    <listType typeId="4bcb8392-3809-4027-80d0-fcad8f83e298" valueTypeId="51c171b3-8fc9-42fa-9d1e-910d2092b1ba"/>
+    <managerType typeId="1a512770-63bd-44a0-85d9-d56a902b057a" valueTypeId="975b1769-67f9-4aae-a010-bb9cdf2962a2"/>
+  </producedTypes>
+  <name>ОписанияТипов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Описания типов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Описание типа</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="8011f226-820f-428c-a1ca-48e91d49e032">
+    <name>БазовыйТип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый тип</value>
+    </synonym>
+    <type>
+      <types>EnumRef.БазовыеТипыОписанийТипов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="50f5deef-15ae-4343-8f0e-ebb31d13f3c9">
+    <name>ДлинаЧисла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина числа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="46b660cb-e212-4e2d-be9f-7a92b7c8eddd">
+    <name>ТочностьЧисла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точность числа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7ebdf9e-de08-41ab-bebc-77b7ae738319">
+    <name>НеотрицательноеЧисло</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неотрицательное число</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9db89a2b-86c0-44ba-bb5d-14f40d9638ed">
+    <name>ДлинаСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2a76ae6-902f-40ae-9515-2e87c4876386">
+    <name>СтрокаНеограниченнойДлины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка неограниченной длины</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="019d5a9f-798f-4007-87df-7b55d6c1bed6">
+    <name>ДатаСВременем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата с временем</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6f6bb34c-67e9-4803-9d38-30cac42b85bc">
+    <name>ФормаОписанияТипа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма описания типа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

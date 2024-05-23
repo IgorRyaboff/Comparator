@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5e1d452-8588-4323-9b8b-aa3e48d486ca">
+  <producedTypes>
+    <refType typeId="06cff7cb-b1f0-4f24-a631-fd2a5f8f070a" valueTypeId="fefc68aa-0269-493a-b0c0-5906bacc7420"/>
+    <listType typeId="02120b5b-04d4-49bf-951f-43b058ced27d" valueTypeId="acf2af57-dbdc-49ad-a579-a3d21742e7db"/>
+    <managerType typeId="f9d78508-4a31-46ca-b598-19f2e7a5e25d" valueTypeId="90ab1f34-9886-4bc7-8e23-48d4b623c207"/>
+  </producedTypes>
+  <name>СпособыСоединенияТаблицДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы соединения таблиц данных</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="372d8f2b-95d3-47c5-a174-f5cf12005a89">
+    <name>Левое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Левое</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e1f5833-bbad-413f-a4c3-b195dbf19b98">
+    <name>Правое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правое</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5ded5e9f-7fa7-4292-9de7-758cb0e64ce5">
+    <name>Внутреннее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="73dfcbef-cc83-4acb-802f-d8bda7630324">
+    <name>Полное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

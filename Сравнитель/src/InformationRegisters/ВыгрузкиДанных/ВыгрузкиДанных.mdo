@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b99ff64-96c5-49db-ab7e-07025a568c0c">
+  <producedTypes>
+    <selectionType typeId="49396ed1-7a3e-4373-a5e8-5c43e4717fe0" valueTypeId="63fe7d58-32ea-44f0-af3e-f13be3630a68"/>
+    <listType typeId="30077a1a-27b0-4313-9b77-4d3ba99c4dea" valueTypeId="c89098dc-823c-4d2c-9ebb-694e80cba107"/>
+    <managerType typeId="aed75fe6-adfd-4bc0-8005-27a6bee495ae" valueTypeId="9eda9412-de6b-4d76-9929-f265ea2077d5"/>
+    <recordSetType typeId="cf776937-5f98-4c61-a9ef-dcd2f6d5baef" valueTypeId="1a5ad3c4-6c65-45ab-b6fd-93e324990d15"/>
+    <recordKeyType typeId="f20972ea-bd7f-4fbe-aaae-fa842584aaf4" valueTypeId="eee485c2-fa82-4cdf-8be5-cea52121be03"/>
+    <recordType typeId="82ff3949-0b09-47ee-abd0-f718276c9f7e" valueTypeId="72ddc2a9-2718-4372-898d-5cba97a910ef"/>
+    <recordManagerType typeId="db83e405-6c52-4c38-85c8-105e4adf6bf8" valueTypeId="96fdc6b1-1ec1-44f2-8c8c-974f1fdcd701"/>
+  </producedTypes>
+  <name>ВыгрузкиДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузки данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="489544ca-151e-45e4-8105-0cdf57825ee8">
+    <name>Выгрузка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка</value>
+    </synonym>
+    <comment>Содержит строку. Хранилище следует максимально сжимать</comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="903a520d-61cc-4c20-999d-8e18084345f0">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.СравнениеДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="caf70881-3ecf-475f-a0a3-2aa85e985504">
+    <name>База</name>
+    <synonym>
+      <key>ru</key>
+      <value>База</value>
+    </synonym>
+    <type>
+      <types>EnumRef.НомераБаз</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
