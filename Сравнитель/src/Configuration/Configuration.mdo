@@ -44,6 +44,7 @@
   <modalityUseMode>UseWithWarnings</modalityUseMode>
   <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
   <compatibilityMode>8.3.22</compatibilityMode>
+  <defaultReportAppearanceTemplate>Sea</defaultReportAppearanceTemplate>
   <languages uuid="e6c6fbdf-5994-4622-bfbf-b9e55de3d8b3">
     <name>Русский</name>
     <synonym>
